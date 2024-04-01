@@ -54,6 +54,7 @@
     --fs-32: 32px;
     --fs-36: 36px;
     --fs-40: 40px;
+    --fs-44: 44px;
     --fs-48: 48px;
     --fs-50: 50px;
     --fs-60: 60px;
@@ -283,6 +284,10 @@
 
 .fs-50 {
     font-size: var(--fs-50);
+}
+
+.fs-44 {
+    font-size: var(--fs-44);
 }
 
 .fs-64 {
@@ -541,6 +546,123 @@
     background-color: var(--bg-color);
 }
 
+.pt_102 {
+    padding-top: 102px;
+}
+
+.blue_card span {
+    width: 64px;
+    height: 64px;
+    padding: 16px;
+    border-radius: 8px;
+    background: rgba(3, 137, 255, 0.1);
+    backdrop-filter: blur(10px);
+}
+
+.color_blue {
+    color: rgba(3, 137, 255, 1);
+
+}
+
+.blur_card {
+    max-width: 531px;
+    min-height: 69px;
+    background: rgba(3, 137, 255, 0.12);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    padding-left: 22px;
+}
+
+.mt_10 {
+    margin-top: 10px;
+}
+
+.pt_177 {
+    padding-top: 177px;
+}
+
+.mt_44 {
+    margin-top: 44px;
+}
+
+.left_top {
+    top: 0;
+    right: 0;
+    transform: translateY(-40%);
+}
+
+.right_bottom_0 {
+    bottom: 0;
+    left: 0;
+    transform: translateY(50%);
+}
+
+.face_sec_full_ellpis {
+    top: 50%;
+    left: 50%;
+}
+
+.slick-slide>div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.value_blur_card {
+    max-width: 400px;
+    min-height: 80px;
+    border-radius: 10px;
+    background: rgba(3, 137, 255, 0.12);
+    backdrop-filter: blur(10px);
+}
+
+.value_blur_card span {
+    width: 51px;
+    height: 51px;
+    border-radius: 50%;
+    background: rgba(3, 137, 255, 0.12);
+    backdrop-filter: blur(10px);
+}
+
+.face_right_bottom_o {
+    top: 25%;
+    right: 0;
+}
+
+.blue_card {
+    max-width: 531px;
+    background: rgba(3, 137, 255, 0.12);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    min-height: 134px;
+    padding-top: 17px;
+    padding-left: 15px;
+}
+
+.blur_card:hover,
+.value_blur_card:hover {
+    box-shadow: 0px 4px 15px 0px #2746ED80;
+    /* box-shadow: 10px 10px 22px -7px rgba(39, 70, 237, 0.75); */
+}
+
+.slick_item {
+    max-width: 911px;
+    min-height: 253px;
+    background-color: #022246;
+}
+
+.slick_slider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pt_46 {
+    padding-top: 46px;
+}
+
 @media (max-width:1024px) {
     .menuIcon {
         width: 30px;
@@ -563,7 +685,7 @@
         flex-direction: column;
         width: 100%;
         height: 100%;
-        position: absolute;
+        position: fixed;
         top: 0;
         left: -100%;
         background-image: url(../img/png/main_sec.png);
@@ -580,6 +702,17 @@
         left: 0;
     }
 
+    .blur_card {
+        max-width: 100%;
+    }
+
+    .blue_card {
+        max-width: 100%;
+    }
+
+    .value_blur_card {
+        max-width: 100%;
+    }
 }
 
 @media (min-width:1024px) {
