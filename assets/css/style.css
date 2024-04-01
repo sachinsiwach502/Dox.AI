@@ -604,6 +604,11 @@
     left: 50%;
 }
 
+.pt_130 {
+    padding-top: 130px;
+}
+
+
 .slick-slide>div {
     display: flex;
     align-items: center;
@@ -629,6 +634,51 @@
 .face_right_bottom_o {
     top: 25%;
     right: 0;
+}
+
+.slick-list {
+    padding: 0 20% 0 20% !important;
+}
+
+/* the slides */
+.slick-slide {
+    margin: 0 27px;
+}
+
+/* the parent */
+.slick-list {
+    margin: 0 -27px;
+}
+
+.slick-dots {
+    bottom: -35px;
+}
+
+.pt_130 {
+    padding-top: 130px;
+}
+
+.slick-dots li button {
+    display: none;
+}
+
+.slick-dots li {
+    background-color: var(--white-color);
+    width: 10px;
+    height: 10px;
+    border-radius: 28px;
+
+}
+
+.slick-dots .slick-active {
+    background-color: var(--timeline-ball);
+    width: 53px;
+    height: 10px;
+    border-radius: 18px;
+}
+
+.slick-slide:not(.slick-current) {
+    opacity: 0.4;
 }
 
 .blue_card {
@@ -658,6 +708,7 @@
     align-items: center;
     justify-content: center;
 }
+
 
 .pt_46 {
     padding-top: 46px;
