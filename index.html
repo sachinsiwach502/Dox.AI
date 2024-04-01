@@ -17,22 +17,149 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="shortcut icon" href="./assets/img/png/nav_icon.png">
 </head>
 
 <body>
-    <header>
-        <nav class="bg-img">
-            <div class="d-flex justify-content-between align-items-center py-3">
-                <div><img src="./assets/img/png/nav_icon.png" alt="nav_icon"></div>
-                <div class="d-flex align-items-center gap_51">
-                    <a href="" class="fs-15 ff-p lh-19 fw-4 white nav-link spacing opacity-75">redact</a>
-                    <a href="" class="fs-15 ff-p lh-19 fw-4 white nav-link spacing opacity-75">extract</a>
-                    <a href="" class="fs-15 ff-p lh-19 fw-4 white nav-link spacing opacity-75">detect</a>
-                    <a href="" class="fs-15 ff-p lh-19 fw-4 white nav-link spacing opacity-75">compare</a>
-                    <button class="bttn">try now</button>
+    <header class="main-bg-img min-vh-100">
+        <nav class="bg-color">
+            <div class="container">
+                <div class="d-flex justify-content-between align-items-center py-3">
+                    <div><img src="./assets/img/png/nav_icon.png" alt="nav_icon" class="curser"></div>
+                    <div class="menuIcon">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <div class="d-flex align-items-center gap_51 menubar">
+                        <a href="#redact"
+                            class="fs-15 ff-p lh-19 fw-4 white nav-linkss text-uppercase spacing opacity-75 py-1">redact</a>
+                        <a href="#extract"
+                            class="fs-15 ff-p lh-19 fw-4 white nav-linkss text-uppercase spacing opacity-75 py-1">extract</a>
+                        <a href="#detect"
+                            class="fs-15 ff-p lh-19 fw-4 white nav-linkss text-uppercase spacing opacity-75 py-1">detect</a>
+                        <a href="#compare"
+                            class="fs-15 ff-p lh-19 fw-4 white nav-linkss text-uppercase spacing opacity-75 py-1">compare</a>
+                        <button class="bttn">Try Now</button>
+                    </div>
+
                 </div>
             </div>
         </nav>
+        <div class="main_sec_container pb_134">
+            <div class="row pt_81 justify-content-between">
+
+                <div class="col-lg-6 position-relative">
+                    <div class="main_content_1">
+                        <div class="d-flex align-items-center gap-3 position-relative z-2">
+                            <div class="blue-line"></div>
+                            <h1 class="ff-p fw-3 fs-32 lh-37 text_color m-0">The world’s <span
+                                    class="text_blue">#1</span>
+                            </h1>
+                        </div>
+                        <h1 class="fw-7 fw-7 fs-48 lh-68 ff-p text_color pt-2 mb-0 position-relative z-2">AI powered
+                            document compliance solution
+                        </h1>
+                    </div>
+                    <div class="position-absolute black_ellips">
+                        <img src="./assets/img/png/main_sec_ellips_black.png" alt="main_sec_ellips_black" class="w-100">
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="main_content_2 ml_65">
+                        <p class="opacity-75 ff-p fs-16 fw-4 lh-27 text_color mb-0">iDox.ai provides the world’s most
+                            advanced AI
+                            powered
+                            redaction solution for organizations to
+                            scan and detect within
+                            document management systems, folders, and multitude of file sources.
+                        </p>
+                        <button class="bttn mt_28">Request Demo</button>
+                    </div>
+                </div>
+            </div>
+            <div class="position-relative mt_82">
+                <img src="./assets/img/png/dashboard.png" alt="dashboard" class="w-100">
+                <div class="position-absolute top_left_dashboard_img">
+                    <div class="box d-flex flex-column align-items-center justify-content-center ps_20">
+                        <div class="d-flex align-items-center justify-content-center gap_20">
+                            <span class="d-flex align-items-center justify-content-center">
+                                <svg width="33" height="33" viewBox="0 0 33 33" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M28.2148 16.4443C29.363 15.6106 30.2321 14.5225 30.7635 13.3086C31.1296 14.2982 31.3213 15.4074 31.3213 16.6458C31.3213 19.6025 30.1859 21.6738 29.0215 23.0081C28.4437 23.6704 27.8638 24.146 27.4221 24.4595C27.335 24.5212 27.2532 24.5767 27.1776 24.6264V26.6132C27.1776 28.1911 25.7861 29.4704 24.0698 29.4704H23.0339C21.8896 29.4704 20.962 28.6174 20.962 27.5656H16.8184C16.8184 28.6174 15.8908 29.4704 14.7465 29.4704H13.7106C11.9942 29.4704 10.6028 28.1911 10.6028 26.6132V26.2069C10.4239 26.1546 10.2236 26.0898 10.0074 26.0094C9.17879 25.702 8.09911 25.1627 7.10289 24.2344C5.87615 23.0911 5.18896 21.6605 4.84457 20.7627C4.73184 20.4688 4.50599 20.2839 4.28621 20.2267C3.12036 19.9238 2.31543 18.9456 2.31543 17.8318V16.3195C2.31543 15.2226 3.10627 14.2585 4.25346 13.957C4.4676 13.9007 4.69992 13.7083 4.81424 13.3905C5.09326 12.6149 5.63138 11.4688 6.61758 10.5497C7.42433 9.79787 8.29503 9.24217 8.95597 8.87627C9.15625 8.76537 9.33924 8.67084 9.49784 8.59261V5.01628C9.49784 4.34297 9.97799 3.86771 10.494 3.67518C11.0057 3.48426 11.6918 3.51619 12.2049 3.96188C12.7286 4.41672 13.4171 4.96078 14.1534 5.40384C14.9085 5.85821 15.617 6.1467 16.1949 6.20057L16.2059 6.2016C15.1119 7.69455 14.6081 9.52257 14.8424 11.3532C15.0931 13.3117 16.7418 14.4895 18.1258 15.0164L23.0755 16.9009C24.4597 17.4278 26.5314 17.6665 28.2148 16.4443ZM10.0849 15.1837C10.943 15.1837 11.6387 14.5441 11.6387 13.7551C11.6387 12.9662 10.943 12.3266 10.0849 12.3266C9.22667 12.3266 8.53097 12.9662 8.53097 13.7551C8.53097 14.5441 9.22667 15.1837 10.0849 15.1837Z"
+                                        fill="#8048F8" />
+                                    <path
+                                        d="M17.2958 8.36328C17.8933 6.97545 19.0779 5.80309 20.6962 5.18665C23.8675 3.97869 27.5036 5.363 28.8176 8.27858C29.9066 10.695 29.0588 13.4048 26.931 14.9496C26.0685 15.5758 24.884 15.5277 23.8686 15.1412L18.9189 13.2567C17.9035 12.8702 17.0288 12.1342 16.9004 11.1308C16.8377 10.6407 16.8456 10.1508 16.919 9.67265L17.2958 8.36328ZM17.2958 8.36328L17.0139 9.19896C17.0576 9.02302 17.1103 8.84922 17.1716 8.67822C17.2097 8.57212 17.2511 8.46709 17.2958 8.36328Z"
+                                        fill="#8048F8" />
+                                </svg>
+                            </span>
+                            <div>
+                                <h2 class="mb-0 ff-p text_color fw-7 fs-20 lh-28 ">95%</h2>
+                                <h4 class="ff-p fw-4 fs-16 lh-23 mb-0 text_color pe_22 text-nowrap">Cost savings</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="position-absolute bottom_left_dashboard_img">
+                    <div class="box d-flex flex-column align-items-center justify-content-center ps_20">
+                        <div class="d-flex align-items-center justify-content-center gap_20">
+                            <span class="d-flex align-items-center justify-content-center">
+                                <svg width="33" height="33" viewBox="0 0 33 33" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M19.3526 2.19141H7.54006C5.90845 2.19141 4.60168 3.40636 4.60168 4.90639L4.58691 26.6263C4.58691 28.1263 5.89368 29.3413 7.52529 29.3413H25.2589C26.8905 29.3413 28.2121 28.1263 28.2121 26.6263V10.3364L19.3526 2.19141ZM22.3058 23.9113H10.4932V21.1963H22.3058V23.9113ZM22.3058 18.4813H10.4932V15.7663H22.3058V18.4813ZM17.8761 11.6939V4.22765L25.9972 11.6939H17.8761Z"
+                                        fill="#0389FF" />
+                                </svg>
+
+                            </span>
+                            <div>
+                                <h2 class="mb-0 ff-p text_color fw-7 fs-20 lh-28 ">47+</h2>
+                                <h4 class="ff-p fw-4 fs-16 lh-23 mb-0 text_color pe_22 text-nowrap">Time savings</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="position-absolute bottom_right_dashboard_img">
+                    <div class="box d-flex flex-column align-items-center justify-content-center ps_20">
+                        <div class="d-flex align-items-center justify-content-center gap_20">
+                            <span class="d-flex align-items-center justify-content-center">
+                                <svg width="33" height="33" viewBox="0 0 33 33" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M21.0943 18.492C19.9208 18.492 18.7737 18.8119 17.7981 19.4112C16.8224 20.0106 16.0619 20.8624 15.6129 21.8591C15.1638 22.8558 15.0463 23.9525 15.2753 25.0106C15.5042 26.0687 16.0693 27.0406 16.899 27.8034C17.7287 28.5663 18.7859 29.0858 19.9368 29.2962C21.0877 29.5067 22.2806 29.3987 23.3647 28.9858C24.4489 28.573 25.3755 27.8739 26.0274 26.9769C26.6793 26.0799 27.0273 25.0253 27.0273 23.9465C27.0273 23.2302 26.8738 22.5209 26.5757 21.8591C26.2775 21.1974 25.8405 20.5961 25.2895 20.0896C24.7386 19.583 24.0846 19.1813 23.3647 18.9072C22.6449 18.633 21.8734 18.492 21.0943 18.492ZM23.0719 22.7344H20.4351V23.3404H22.4127C22.5876 23.3404 22.7552 23.4043 22.8789 23.5179C23.0025 23.6316 23.0719 23.7858 23.0719 23.9465V25.7647C23.0719 25.9254 23.0025 26.0796 22.8789 26.1932C22.7552 26.3069 22.5876 26.3707 22.4127 26.3707H21.7535V26.9768H20.4351V26.3707H19.1166V25.1586H21.7535V24.5526H19.7758C19.601 24.5526 19.4333 24.4887 19.3097 24.375C19.1861 24.2614 19.1166 24.1072 19.1166 23.9465V22.1283C19.1166 21.9676 19.1861 21.8134 19.3097 21.6998C19.4333 21.5861 19.601 21.5223 19.7758 21.5223H20.4351V20.9162H21.7535V21.5223H23.0719V22.7344ZM14.502 10.0071C13.8027 10.0071 13.132 9.75169 12.6375 9.29706C12.143 8.84242 11.8651 8.22581 11.8651 7.58286V6.37074H17.1389V7.58286C17.1389 8.22581 16.8611 8.84242 16.3666 9.29706C15.8721 9.75169 15.2014 10.0071 14.502 10.0071ZM14.502 19.7041C15.0291 19.7021 15.5442 19.848 15.9787 20.1223C15.1655 21.0421 14.6636 22.161 14.535 23.3404H11.8651V22.1283C11.8651 21.4854 12.143 20.8687 12.6375 20.4141C13.132 19.9595 13.8027 19.7041 14.502 19.7041ZM14.8053 25.7647C14.9484 26.1875 15.143 26.5941 15.3854 26.9768H5.93213V25.7647H7.25058V22.7344C7.24377 21.3909 7.68149 20.0772 8.50566 18.9677C9.32983 17.8582 10.5015 17.0053 11.8651 16.5223V13.1889C10.5015 12.7059 9.32983 11.853 8.50566 10.7435C7.68149 9.63399 7.24377 8.32032 7.25058 6.9768V3.9465H5.93213V2.73438H23.0719V3.9465H21.7535V6.9768C21.7603 8.32032 21.3226 9.63399 20.4984 10.7435C19.6742 11.853 18.5026 12.7059 17.1389 13.1889V16.5223C18.0778 16.8611 18.929 17.3773 19.6374 18.0374C18.6417 18.2414 17.7116 18.6564 16.9214 19.2495C16.4063 18.8859 15.8018 18.6444 15.1613 18.5465V11.1647C16.0822 11.0216 16.9184 10.5834 17.5217 9.92784C18.125 9.27227 18.4564 8.44157 18.4574 7.58286V5.76468C18.4574 5.60394 18.3879 5.44979 18.2643 5.33613C18.1407 5.22247 17.973 5.15862 17.7982 5.15862H11.2059C11.0311 5.15862 10.8634 5.22247 10.7398 5.33613C10.6161 5.44979 10.5467 5.60394 10.5467 5.76468V7.58286C10.5476 8.44157 10.8791 9.27227 11.4824 9.92784C12.0857 10.5834 12.9218 11.0216 13.8428 11.1647V18.5465C12.9218 18.6896 12.0857 19.1278 11.4824 19.7833C10.8791 20.4389 10.5476 21.2696 10.5467 22.1283V23.9465C10.5467 24.1072 10.6161 24.2614 10.7398 24.375C10.8634 24.4887 11.0311 24.5526 11.2059 24.5526H14.535C14.5805 24.9639 14.6711 25.37 14.8053 25.7647Z"
+                                        fill="#23A566" />
+                                </svg>
+
+                            </span>
+                            <div>
+                                <h2 class="mb-0 ff-p text_color fw-7 fs-20 lh-28 ">95%</h2>
+                                <h4 class="ff-p fw-4 fs-16 lh-23 mb-0 text_color pe_22 text-nowrap">Time savings</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="position-absolute top_right_dashboard_img">
+                    <div class="box d-flex flex-column align-items-center justify-content-center ps_20">
+                        <div class="d-flex align-items-center justify-content-center gap_20">
+                            <span class="d-flex align-items-center justify-content-center">
+                                <svg width="33" height="33" viewBox="0 0 33 33" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M17.6618 5.79866V8.1623C19.5885 8.42275 21.3761 9.30945 22.7492 10.6858C24.1224 12.0622 25.0049 13.8518 25.2609 15.7791H27.6245C27.3543 13.2275 26.2183 10.8455 24.4056 9.02957C22.5929 7.21364 20.2129 6.07339 17.6618 5.79866ZM5.31771 15.7791H7.68134C7.94179 13.8524 8.8285 12.0648 10.2049 10.6917C11.5812 9.31852 13.3709 8.43599 15.2982 8.18003V5.81639C12.7466 6.08658 10.3645 7.2226 8.54862 9.03531C6.73269 10.848 5.59244 13.228 5.31771 15.7791ZM25.2609 18.1428C25.0013 20.0668 24.1172 21.8525 22.7444 23.2253C21.3715 24.5982 19.5859 25.4823 17.6618 25.7418V28.1055C20.2134 27.8353 22.5954 26.6993 24.4113 24.8866C26.2273 23.0739 27.3675 20.6938 27.6423 18.1428H25.2609ZM7.69907 18.1428H5.33543C5.60563 20.6943 6.74164 23.0764 8.55435 24.8923C10.3671 26.7082 12.7471 27.8485 15.2982 28.1232V25.7596C13.3715 25.4991 11.5839 24.6124 10.2107 23.2361C8.83756 21.8597 7.95503 20.07 7.69907 18.1428ZM16.48 11.6428C15.4281 11.6428 14.3999 11.9547 13.5254 12.539C12.6508 13.1234 11.9691 13.954 11.5666 14.9258C11.1641 15.8975 11.0588 16.9668 11.264 17.9985C11.4692 19.0301 11.9757 19.9777 12.7195 20.7215C13.4632 21.4652 14.4108 21.9717 15.4425 22.1769C16.4741 22.3821 17.5434 22.2768 18.5152 21.8743C19.4869 21.4718 20.3175 20.7901 20.9019 19.9156C21.4863 19.041 21.7982 18.0128 21.7982 16.9609C21.7982 15.5505 21.2379 14.1978 20.2405 13.2004C19.2431 12.2031 17.8904 11.6428 16.48 11.6428ZM29.48 17.5518H23.5709V16.37H29.48V17.5518ZM17.0709 9.87003H15.8891V3.96094H17.0709V9.87003ZM9.38907 17.5518H3.47998V16.37H9.38907V17.5518ZM17.0709 29.9609H15.8891V24.0518H17.0709V29.9609Z"
+                                        fill="#F15642" />
+                                </svg>
+
+                            </span>
+                            <div>
+                                <h2 class="mb-0 ff-p text_color fw-7 fs-20 lh-28 ">99%</h2>
+                                <h4 class="ff-p fw-4 fs-16 lh-23 mb-0 text_color pe_22 text-nowrap">Accuracy</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </header>
     <main></main>
     <footer></footer>
