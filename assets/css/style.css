@@ -23,6 +23,7 @@
     --primary-color: #0389FF;
     --nav-color: #FFFFFF0A;
     --black-color: #000000;
+    --bg-color: #020D15;
     --btn-color: linear-gradient(159.94deg, rgba(0, 136, 255, 0.58) -14.36%, #0069E3 113.71%);
     --slider-color: #F0E8E1;
     --red-color: #FF1300;
@@ -528,6 +529,18 @@
     gap: 20px;
 }
 
+.pt_93 {
+    padding-top: 93px;
+}
+
+.-mt_20 {
+    margin-top: -20px;
+}
+
+.bg_color {
+    background-color: var(--bg-color);
+}
+
 @media (max-width:1024px) {
     .menuIcon {
         width: 30px;
@@ -582,6 +595,7 @@
         max-width: 515px;
     }
 
+    /* 
     .top_right_dashboard_img {
         display: none;
     }
@@ -596,7 +610,7 @@
 
     .bottom_right_dashboard_img {
         display: none;
-    }
+    } */
 }
 
 @media (max-width:1200px) {
