@@ -765,6 +765,16 @@
     box-shadow: 0px 4px 32px 0px #2746ED80;
 }
 
+.onhover:hover .hover_ellips {
+    opacity: 1;
+}
+
+.hover_ellips {
+    top: 30%;
+    right: 10%;
+    position: absolute;
+    opacity: 0;
+}
 
 .pt_46 {
     padding-top: 46px;
