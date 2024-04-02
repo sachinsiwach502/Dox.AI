@@ -39,6 +39,7 @@
     --pink-color: #F7608C;
     --orange-color: #F8AC58;
     --slider-bg: #141044;
+    --footer-color: #021728;
 
     --fs-10: 10px;
     --fs-14: 14px;
@@ -784,6 +785,83 @@
     width: 350px;
 }
 
+.bg_img_1 {
+    background-image: url("../img/png/main_sec.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.pt_110 {
+    padding-top: 110px;
+}
+
+.pt_33 {
+    padding-top: 33px;
+}
+
+.input_card {
+    background: rgba(251, 253, 255, 0.07);
+    justify-content: space-between;
+    border-radius: 29px;
+    padding-left: 20px;
+}
+
+
+.w_520 {
+    width: 520px;
+
+}
+
+input[type="text"] {
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+
+.input_txt {
+    font-family: var(--ff-pulse);
+    color: var(--text-color);
+    opacity: 80%;
+    font-size: var(--fs-16);
+    line-height: var(--lh-27);
+    font-weight: var(--fw-4);
+}
+
+input[type="text"]::placeholder {
+    font-family: var(--ff-pulse);
+    color: var(--text-color);
+    opacity: 80%;
+    font-size: var(--fs-16);
+    line-height: var(--lh-27);
+    font-weight: var(--fw-4);
+}
+
+.bg-footer-color {
+    background-color: var(--footer-color);
+}
+
+.media_app a span {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(255, 255, 255, 1);
+    margin-top: 36px;
+}
+
+.under_line {
+    width: 100%;
+    height: 1px;
+    background-color: var(--text-color);
+}
+
+.pt_174 {
+    padding-top: 174px;
+}
+
 @media (max-width:992px) {
     .menuIcon {
         width: 30px;
@@ -834,6 +912,8 @@
     .value_blur_card {
         max-width: 100%;
     }
+
+
 }
 
 @media (min-width:992px) {
@@ -858,6 +938,10 @@
         left: 35%;
     }
 
+    .max_w_225 {
+        max-width: 225px;
+    }
+
     .hortxontal_2 {
         position: absolute;
         width: 1px;
@@ -865,6 +949,10 @@
         background-color: rgba(251, 253, 255, 0.15);
         top: 0;
         left: 70%;
+    }
+
+    .max_w_617 {
+        max-width: 617px;
     }
 
     .vertical {
@@ -901,6 +989,10 @@
         right: 10%;
         bottom: 0;
         transform: translate(0, 40%);
+    }
+
+    .mt_30 {
+        margin-top: 30px;
     }
 }
 
@@ -942,4 +1034,27 @@
         top: 70%;
         left: 0;
     }
+
+    .w_520 {
+        max-width: 520px;
+    }
+
+    .pos_sport {
+        position: relative;
+        /* left: 272px; */
+        left: 50%;
+        top: 394px;
+    }
+
+    .mt_50 {
+        margin-top: 50px;
+    }
 }
+
+@media (min-width:576px) {
+    .text-sm-nowrap {
+        text-wrap: nowrap;
+    }
+}
+
+@media (min-width:1400px) {}
