@@ -439,9 +439,51 @@
     width: 100%;
 }
 
+.work_card {
+    min-height: 228px;
+    width: 231px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(3, 137, 255, 0.12);
+    border-radius: 15px;
+}
+
+.pr_70 {
+    padding-right: 70px;
+}
+
+
+
+.doted_border {
+    border: 1px dotted rgba(3, 137, 255, 1);
+    border-radius: 5px;
+    padding: 9px 7px;
+    margin-top: 10px;
+}
+
+label[for="upload_file"] {
+    padding-top: 3px;
+    padding-bottom: 3px;
+    background: var(--btn-color);
+    border-radius: 44px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+
+.inside_card {
+    max-width: 189px;
+    min-height: 185.41px;
+    border-radius: 22px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    background: rgba(0, 0, 0, 0.33);
+    padding: 19px 14px;
+
+}
 
 .main_sec_container {
-    max-width: 1120px;
+    max-width: 1140px;
     margin-left: auto;
     margin-right: auto;
     padding-left: 12px;
@@ -796,6 +838,21 @@
     background-repeat: no-repeat;
 }
 
+.blue_box {
+    padding: 3px 5px;
+    border-radius: 4px;
+    background: var(--btn-color);
+    display: inline-block;
+}
+
+.black_box {
+    padding: 3px 5px;
+    border-radius: 4px;
+    background: rgba(0, 0, 0, 1);
+    color: rgba(0, 0, 0, 1);
+    display: inline-block;
+}
+
 .pt_110 {
     padding-top: 110px;
 }
@@ -878,6 +935,56 @@ input[type="text"]::placeholder {
 
 .blur_sec_txt {
     display: none;
+}
+
+.pb_56 {
+    padding-bottom: 56px;
+}
+
+.gap_13 {
+    gap: 13px;
+}
+
+.add_img{
+    
+}
+
+
+/* Hide the default checkbox */
+.custom-checkbox input[type="checkbox"] {
+    position: absolute;
+    opacity: 0;
+}
+
+/* Style the custom checkbox */
+.custom-checkbox .checkmark {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border-radius: 2px;
+    background-color: #eee;
+    border: 1px solid #2196F3;
+}
+
+/* Style the custom checkbox when checked */
+.custom-checkbox input[type="checkbox"]:checked+.checkmark {
+    background-color: #2196F3;
+}
+
+/* Create the checkmark for the custom checkbox */
+.custom-checkbox .checkmark:after {
+    content: "";
+    display: none;
+    width: 6px;
+    height: 12px;
+    border: solid black;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+
+/* Show the checkmark when the checkbox is checked */
+.custom-checkbox input[type="checkbox"]:checked+.checkmark:after {
+    display: block;
 }
 
 @media (max-width:992px) {
@@ -1016,6 +1123,8 @@ input[type="text"]::placeholder {
 
 }
 
+
+
 @media (max-width:1200px) {
     .top_right_dashboard_img {
         right: 0;
@@ -1133,6 +1242,7 @@ input[type="text"]::placeholder {
         left: 66%;
         top: 10%;
     }
+
 }
 
 @media (min-width:576px) {
@@ -1140,7 +1250,19 @@ input[type="text"]::placeholder {
         text-wrap: nowrap;
     }
 
+    .right-side_arrow {
+        right: -20px;
+        top: 35%;
+    }
 
+}
+
+@media (min-width:1200px) {
+    .right-side_arrow {
+        right: 0;
+        top: 35%;
+        transform: translate(35%, 0px);
+    }
 }
 
 
