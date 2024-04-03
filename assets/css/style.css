@@ -621,7 +621,7 @@ label[for="upload_file"] {
     border-radius: 10px;
     display: flex;
     align-items: center;
-    padding-left: 22px;
+    padding: 22px;
 }
 
 .mt_10 {
@@ -662,6 +662,21 @@ label[for="upload_file"] {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.timer-img {
+    padding: 17px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(3, 137, 255, 0.1);
+    display: none;
+}
+
+
+.disp_text {
+    display: none;
 }
 
 .value_blur_card {
@@ -1020,7 +1035,18 @@ input[type="text"]::placeholder {
 
 .footer_links {
     position: relative;
+}
 
+.app {
+    transition: all 400ms linear;
+}
+
+.app:hover {
+    transform: scale(1.1);
+}
+
+.app:hover svg {
+    transform: scale(1.1);
 }
 
 .footer_links::after {
@@ -1038,12 +1064,12 @@ input[type="text"]::placeholder {
     width: 100%;
 }
 
-.slick_itm {
+.slick_itm img {
     filter: grayscale(100%);
 }
 
-.slick_itm:hover {
-    filter: grayscale(0);
+.slick_itm img:hover {
+    filter: none;
 }
 
 

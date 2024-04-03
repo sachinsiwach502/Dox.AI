@@ -1,9 +1,13 @@
 let menuIcon = document.querySelector(".menuIcon");
 let menuList = document.querySelector(".menubar");
 
+
+
 menuIcon.addEventListener("click", () => {
-    menuList.classList.toggle("show")
+    menuList.classList.toggle("show");
 });
+
+
 
 $('.slick-slider').slick({
     dots: false,
@@ -71,29 +75,6 @@ $('.slick_slider').slick({
     ]
 });
 
-document.querySelector(".time_svg").style.display = "flex";
-let paragraph = document.querySelector(".blur_sec_txt").style.display = "block"
-let card = document.querySelectorAll(".blue_card");
-
-card.forEach(blueSec => {
-    let heading = blueSec.querySelector(".blur_sec_heading");
-    let paragraph = blueSec.querySelector(".blur_sec_txt");
-    let img = blueSec.querySelector(".time_svg");
-
-    let para_display = window.getComputedStyle(paragraph).display
-    card.addEventListener("click", () => {
-        if (para_display = "none") {
-            heading.style.color = "rgba(3, 137, 255, 1)";
-            paragraph.style.display = "block";
-            img.style.display = "flex";
-        } else {
-            heading.style.color = "white";
-            paragraph.style.display = "none";
-            img.style.display = "none";
-        }
-    })
-});
-
 
 const all_select = document.querySelector(".all_select");
 let child = document.querySelectorAll(".child");
@@ -101,5 +82,41 @@ let child = document.querySelectorAll(".child");
 all_select.addEventListener("change", () => {
     child.forEach(other => {
         other.checked = all_select.checked;
+    });
+});
+
+let accord_item = document.querySelectorAll(".blur_card");
+let click_btn = document.querySelector(".click_btn");
+let svg_box = document.querySelector(".timer-img");
+let disp_text = document.querySelector(".disp_text");
+disp_text.style.display = "block";
+svg_box.style.display = "flex";
+click_btn.style.color = "#0389FF";
+
+accord_item.forEach(other => {
+    let click_btn = other.querySelector(".click_btn");
+    let svg_box = other.querySelector(".timer-img");
+    let disp_text = other.querySelector(".disp_text");
+    click_btn.addEventListener("click", () => {
+        accord_item.forEach(otherItm => {
+            let click_btn = otherItm.querySelector(".click_btn");
+            let svg_box = otherItm.querySelector(".timer-img");
+            let disp_text = otherItm.querySelector(".disp_text");
+            if (otherItm !== other) {
+                svg_box.style.display = "none";
+                disp_text.style.display = "none";
+                click_btn.style.color = "#ffffff"
+            }
+        })
+        let text = window.getComputedStyle(disp_text).display;
+        if (text === "none") {
+            disp_text.style.display = "block";
+            svg_box.style.display = "flex";
+            click_btn.style.color = "#0389FF";
+        } else {
+            disp_text.style.display = "none";
+            svg_box.style.display = "none";
+            click_btn.style.color = "#FFFFFF";
+        }
     });
 });
