@@ -70,3 +70,26 @@ $('.slick_slider').slick({
         }
     ]
 });
+
+document.querySelector(".time_svg").style.display = "flex";
+let paragraph = document.querySelector(".blur_sec_txt").style.display = "block"
+let card = document.querySelectorAll(".blue_card");
+
+card.forEach(blueSec => {
+    let heading = blueSec.querySelector(".blur_sec_heading");
+    let paragraph = blueSec.querySelector(".blur_sec_txt");
+    let img = blueSec.querySelector(".time_svg");
+
+    let para_display = window.getComputedStyle(paragraph).display
+    card.addEventListener("click", () => {
+        if (para_display = "none") {
+            heading.style.color = "rgba(3, 137, 255, 1)";
+            paragraph.style.display = "block";
+            img.style.display = "flex";
+        } else {
+            heading.style.color = "white";
+            paragraph.style.display = "none";
+            img.style.display = "none";
+        }
+    })
+})
