@@ -810,6 +810,7 @@ label[for="upload_file"] {
     max-width: 911px;
     min-height: 253px;
     background-color: #022246;
+    border-radius: 20px;
 }
 
 .slick_slider {
