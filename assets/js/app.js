@@ -23,8 +23,6 @@ menuIcon.addEventListener("click", () => {
 
 
 
-
-
 $('.slick-slider').slick({
     dots: false,
     infinite: true,
@@ -64,6 +62,7 @@ $('.slick-slider').slick({
         }
     ]
 });
+
 $('.slick_slider').slick({
     centerMode: true,
     centerPadding: '60px',
@@ -144,11 +143,9 @@ let scrol_pt = 200;
 scroll_top.style.display = "none";
 window.addEventListener("scroll", () => {
     if (window.scrollY > scrol_pt) {
-        console.log("sachin");
         scroll_top.style.display = "block"
     } else {
         scroll_top.style.display = "none";
-        console.log("me");
     }
 });
 
@@ -157,6 +154,13 @@ scroll_top.addEventListener("click", () => {
         top: 0, behaviour: "smooth",
     })
 });
+
+gsap.from(".scroll_to_top", {
+    y: 20,
+    repeat: -1,
+    duration: 1,
+    yoyo: true
+})
 
 let preloader = document.querySelector(".preloader");
 preloader.classList.add("d-flex");
