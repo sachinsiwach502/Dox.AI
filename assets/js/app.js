@@ -1,14 +1,27 @@
 let menuIcon = document.querySelector(".menuIcon");
 let menuList = document.querySelector(".menubar");
 let body = document.body;
+let nav_links = document.querySelectorAll(".nav-linkss");
+
 menuIcon.addEventListener("click", () => {
     menuList.classList.toggle("show");
     if (menuList.classList.contains("show")) {
+        nav_links.forEach(navs => {
+            navs.addEventListener("click", () => {
+                if (menuList.classList.contains("show")) {
+                    menuList.classList.remove("show");
+                    body.style.overflow = "auto";
+                }
+
+            })
+        });
         body.style.overflow = "hidden"
     } else {
         body.style.overflow = "auto";
     }
 });
+
+
 
 
 
