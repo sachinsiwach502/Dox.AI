@@ -1,8 +1,13 @@
 let menuIcon = document.querySelector(".menuIcon");
 let menuList = document.querySelector(".menubar");
-
+let body = document.body;
 menuIcon.addEventListener("click", () => {
     menuList.classList.toggle("show");
+    if (menuList.classList.contains("show")) {
+        body.style.overflow = "hidden"
+    } else {
+        body.style.overflow = "auto";
+    }
 });
 
 
