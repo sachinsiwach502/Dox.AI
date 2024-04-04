@@ -1495,6 +1495,10 @@ input[type="text"]::placeholder {
         left: 0%;
         top: 75%;
     }
+    .md-fs-lh{
+        font-size: var(--fs-36);
+        line-height: var(--lh-40);
+    }
 }
 
 @media (min-width:576px) {
@@ -1505,5 +1509,12 @@ input[type="text"]::placeholder {
     .right-side_arrow {
         right: -20px;
         top: 35%;
+    }
+}
+
+@media (max-width:576px) {
+    .sm-fs-lh{
+        font-size: var(--fs-28);
+        line-height: var(--lh-35);
     }
 }
