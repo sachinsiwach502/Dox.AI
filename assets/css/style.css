@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Imbue:opsz,wght@10..100,100..900&display=swap');
 
 * {
     box-sizing: border-box;
@@ -105,6 +105,10 @@
 
 .ff-p {
     font-family: var(--ff-pulse);
+}
+
+.ff-e {
+    font-family: "Imbue", serif;
 }
 
 
@@ -1073,6 +1077,116 @@ input[type="text"]::placeholder {
     filter: none;
 }
 
+/* preloader */
+
+.preloader {
+    position: fixed;
+    width: 100%;
+    height: 105%;
+    top: 0;
+    right: 0;
+    background-image: url(../img/png/main_sec.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: 100;
+}
+
+@keyframes loader {
+
+    0%,
+    10%,
+    100% {
+        width: 80px;
+        height: 80px;
+    }
+
+    65% {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+@keyframes loaderBlock {
+
+    0%,
+    30% {
+        transform: rotate(0);
+    }
+
+    55% {
+        background-color: #F37272;
+    }
+
+    100% {
+        transform: rotate(90deg);
+
+    }
+}
+
+@keyframes loaderBlockInverse {
+
+    0%,
+    20% {
+        transform: rotate(0);
+    }
+
+    55% {
+        background-color: #F37272;
+    }
+
+    100% {
+        transform: rotate(-90deg);
+    }
+}
+
+
+.loader {
+    position: fixed;
+    top: 30%;
+    left: 50%;
+    width: 80px;
+    height: 80px;
+    transform: translate(-50%, -50%) rotate(45deg) translate3d(0, 0, 0);
+    animation: loader 1.2s infinite ease-in-out;
+    z-index: 101;
+
+    span {
+        position: absolute;
+        display: block;
+        width: 40px;
+        height: 40px;
+        background-color: #EE4040;
+        animation: loaderBlock 1.2s infinite ease-in-out both;
+
+        &:nth-child(1) {
+            top: 0;
+            left: 0;
+        }
+
+        &:nth-child(2) {
+            top: 0;
+            right: 0;
+            animation: loaderBlockInverse 1.2s infinite ease-in-out both;
+        }
+
+        &:nth-child(3) {
+            bottom: 0;
+            left: 0;
+            animation: loaderBlockInverse 1.2s infinite ease-in-out both;
+        }
+
+        &:nth-child(4) {
+            bottom: 0;
+            right: 0;
+        }
+    }
+}
+
+body {
+    background-color: #584E4A;
+}
+
 
 @media (max-width:992px) {
     .menuIcon {
@@ -1082,7 +1196,7 @@ input[type="text"]::placeholder {
         justify-content: space-between;
         align-items: center;
         flex-direction: column;
-        z-index: 101;
+        z-index: 50;
     }
 
     .menuIcon span {

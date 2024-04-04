@@ -136,3 +136,9 @@ accord_item.forEach(other => {
         }
     });
 });
+
+let preloader = document.querySelector(".preloader");
+preloader.classList.add("d-flex");
+setTimeout(() => {
+    preloader.classList.add("d-none");
+}, 3000)
