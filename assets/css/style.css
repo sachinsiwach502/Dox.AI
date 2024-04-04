@@ -1220,7 +1220,7 @@ body {
         align-items: center;
         justify-content: center;
         transition: all 400ms linear;
-        z-index: 100;
+        z-index: 49;
     }
 
     .show {
@@ -1237,6 +1237,16 @@ body {
 
     .value_blur_card {
         max-width: 100%;
+    }
+
+    .flex-prop {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .text_center{
+        text-align: center;
     }
 
 

@@ -142,3 +142,6 @@ preloader.classList.add("d-flex");
 setTimeout(() => {
     preloader.classList.add("d-none");
 }, 3000)
+
+
+
