@@ -1187,6 +1187,15 @@ body {
     background-color: #584E4A;
 }
 
+.scroll_to_top {
+    width: 60px;
+    height: 60px;
+    position: fixed;
+    bottom: 2%;
+    right: 2%;
+    cursor: pointer;
+    z-index: 30;
+}
 
 @media (max-width:992px) {
     .menuIcon {
@@ -1245,7 +1254,8 @@ body {
         align-items: center;
         justify-content: center;
     }
-    .text_center{
+
+    .text_center {
         text-align: center;
     }
 

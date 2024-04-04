@@ -137,11 +137,29 @@ accord_item.forEach(other => {
     });
 });
 
+
+
+let scroll_top = document.querySelector(".scroll_to_top");
+let scrol_pt = 200;
+scroll_top.style.display = "none";
+window.addEventListener("scroll", () => {
+    if (window.scrollY > scrol_pt) {
+        console.log("sachin");
+        scroll_top.style.display = "block"
+    } else {
+        scroll_top.style.display = "none";
+        console.log("me");
+    }
+});
+
+scroll_top.addEventListener("click", () => {
+    window.scrollTo({
+        top: 0, behaviour: "smooth",
+    })
+});
+
 let preloader = document.querySelector(".preloader");
 preloader.classList.add("d-flex");
 setTimeout(() => {
     preloader.classList.add("d-none");
 }, 3000)
-
-
-
