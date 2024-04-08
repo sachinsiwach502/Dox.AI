@@ -617,9 +617,7 @@ label[for="upload_file"] {
     gap: 20px;
 }
 
-.pt_93 {
-    padding-top: 93px;
-}
+
 
 .-mt_20 {
     margin-top: -20px;
@@ -1391,8 +1389,12 @@ input[type="text"]::placeholder {
     z-index: 30;
 }
 
-.pb_40{
+.pb_40 {
     padding-bottom: 40px;
+}
+
+.mb_40 {
+    margin-bottom: -40px;
 }
 
 /*------------ media screens ------------*/
@@ -1514,6 +1516,10 @@ input[type="text"]::placeholder {
 
     .max_w_225 {
         max-width: 225px;
+    }
+
+    .pt_93 {
+        padding-top: 93px;
     }
 
     .hortxontal_2 {
@@ -1752,19 +1758,4 @@ input[type="text"]::placeholder {
         font-size: var(--fs-28);
         line-height: var(--lh-35);
     }
-}
-
-.example {
-    display: -ms-grid;
-    display: grid;
-    -webkit-transition: all .5s;
-    -o-transition: all .5s;
-    transition: all .5s;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    background: -webkit-gradient(linear, left top, left bottom, from(white), to(black));
-    background: -o-linear-gradient(top, white, black);
-    background: linear-gradient(to bottom, white, black);
 }
