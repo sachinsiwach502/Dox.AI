@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Imbue:opsz,wght@10..100,100..900&display=swap');
 
 * {
     -webkit-box-sizing: border-box;
@@ -107,11 +106,6 @@
 .ff-p {
     font-family: var(--ff-pulse);
 }
-
-.ff-e {
-    font-family: "Imbue", serif;
-}
-
 
 .curser {
     cursor: pointer;
@@ -1397,6 +1391,9 @@ input[type="text"]::placeholder {
     z-index: 30;
 }
 
+.pb_40{
+    padding-bottom: 40px;
+}
 
 /*------------ media screens ------------*/
 
@@ -1546,7 +1543,7 @@ input[type="text"]::placeholder {
         height: 2px;
         background-color: rgba(251, 253, 255, 0.15);
         right: 0;
-        top: 60%;
+        top: 50%;
     }
 
     .ver_line_1 {
@@ -1554,7 +1551,6 @@ input[type="text"]::placeholder {
         height: 100%;
         background-color: rgba(251, 253, 255, 0.15);
         left: 25%;
-        top: 10%;
     }
 
     .ver_line_2 {
@@ -1562,7 +1558,6 @@ input[type="text"]::placeholder {
         height: 100%;
         background-color: rgba(251, 253, 255, 0.15);
         left: 50%;
-        top: 10%;
     }
 
     .ver_line_3 {
@@ -1570,7 +1565,6 @@ input[type="text"]::placeholder {
         height: 100%;
         background-color: rgba(251, 253, 255, 0.15);
         left: 75%;
-        top: 10%;
     }
 
 }
