@@ -40,6 +40,14 @@
     --orange-color: #F8AC58;
     --slider-bg: #141044;
     --footer-color: #021728;
+    --checkbox-color: #2196F3;
+    --preloader-box: #F37272;
+    --slick-itm: #022246;
+    --hover-shdow: #2746ED80;
+    --svg-bg-color: #0389FF1A;
+    --loader-red-color: #EE4040;
+    --border-bottom-color: #FBFDFF33;
+
 
     --fs-10: 10px;
     --fs-14: 14px;
@@ -368,8 +376,8 @@
     background: var(--btn-color);
     border: 1px solid transparent;
     border-radius: 40px;
-    -webkit-box-shadow: 0px 4px 32px 0px #2746ED80;
-    box-shadow: 0px 4px 32px 0px #2746ED80;
+    -webkit-box-shadow: 0px 4px 32px 0px var(--hover-shdow);
+    box-shadow: 0px 4px 32px 0px var(--hover-shdow);
 }
 
 .bttn:hover {
@@ -385,7 +393,7 @@
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    border-bottom: 1px solid #FBFDFF33;
+    border-bottom: 1px solid var(--border-bottom-color);
 }
 
 .main-bg-img {
@@ -851,7 +859,7 @@ label[for="upload_file"] {
     width: 20px;
     height: 20px;
     border-radius: 50%;
-    background-color: #0389FF1A;
+    background-color: var(--svg-bg-color);
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -865,15 +873,15 @@ label[for="upload_file"] {
 
 .blur_card:hover,
 .value_blur_card:hover {
-    -webkit-box-shadow: 0px 4px 15px 0px #2746ED80;
-    box-shadow: 0px 4px 15px 0px #2746ED80;
+    -webkit-box-shadow: 0px 4px 15px 0px var(--hover-shdow);
+    box-shadow: 0px 4px 15px 0px var(--hover-shdow);
     /* box-shadow: 10px 10px 22px -7px rgba(39, 70, 237, 0.75); */
 }
 
 .slick_item {
     max-width: 911px;
     min-height: 253px;
-    background-color: #022246;
+    background-color: var(--slick-itm);
     border-radius: 20px;
 }
 
@@ -901,8 +909,8 @@ label[for="upload_file"] {
     background: var(--btn-color);
     border: 1px solid transparent;
     border-radius: 40px;
-    -webkit-box-shadow: 0px 4px 32px 0px #2746ED80;
-    box-shadow: 0px 4px 32px 0px #2746ED80;
+    -webkit-box-shadow: 0px 4px 32px 0px var(--hover-shdow);
+    box-shadow: 0px 4px 32px 0px var(--hover-shdow);
 }
 
 .onhover:hover .hover_ellips {
@@ -1054,6 +1062,7 @@ input[type="text"]::placeholder {
     width: 100%;
     height: 1px;
     background-color: var(--text-color);
+    opacity: 20%;
 }
 
 
@@ -1061,6 +1070,8 @@ input[type="text"]::placeholder {
 .min-h-170 {
     min-height: 170px;
 }
+
+
 
 .pt_174 {
     padding-top: 174px;
@@ -1082,7 +1093,13 @@ input[type="text"]::placeholder {
     gap: 13px;
 }
 
+.pb-126 {
+    padding-bottom: 126px;
+}
 
+.pb-95 {
+    padding-bottom: 95px;
+}
 
 
 /* Hide the default checkbox */
@@ -1097,13 +1114,13 @@ input[type="text"]::placeholder {
     width: 15px;
     height: 15px;
     border-radius: 2px;
-    background-color: #eee;
-    border: 1px solid #2196F3;
+    background-color: var(--white-color);
+    border: 1px solid var(--checkbox-color);
 }
 
 /* Style the custom checkbox when checked */
 .custom-checkbox input[type="checkbox"]:checked+.checkmark {
-    background-color: #2196F3;
+    background-color: var(--checkbox-color);
 }
 
 /* Create the checkmark for the custom checkbox */
@@ -1254,7 +1271,7 @@ input[type="text"]::placeholder {
     }
 
     55% {
-        background-color: #F37272;
+        background-color: var(--preloader-box);
     }
 
     100% {
@@ -1273,7 +1290,7 @@ input[type="text"]::placeholder {
     }
 
     55% {
-        background-color: #F37272;
+        background-color: var(--preloader-box);
     }
 
     100% {
@@ -1292,7 +1309,7 @@ input[type="text"]::placeholder {
     }
 
     55% {
-        background-color: #F37272;
+        background-color: var(--preloader-box);
     }
 
     100% {
@@ -1310,7 +1327,7 @@ input[type="text"]::placeholder {
     }
 
     55% {
-        background-color: #F37272;
+        background-color: var(--preloader-box);
     }
 
     100% {
@@ -1349,7 +1366,7 @@ input[type="text"]::placeholder {
         display: block;
         width: 40px;
         height: 40px;
-        background-color: #EE4040;
+        background-color: var(--loader-red-color);
         -webkit-animation: loaderBlock 1.2s infinite ease-in-out both;
         animation: loaderBlock 1.2s infinite ease-in-out both;
 
@@ -1750,6 +1767,10 @@ input[type="text"]::placeholder {
     .right-side_arrow {
         right: -20px;
         top: 35%;
+    }
+
+    .w-sm-65 {
+        width: 65% !important;
     }
 }
 
